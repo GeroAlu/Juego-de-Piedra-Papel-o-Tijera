@@ -1,0 +1,84 @@
+body {
+    margin: 0%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.contenedor {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imagenes {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.titulo {
+    font-size: 35px;
+    
+}
+.imagen {
+    height: 250px;
+    text-align: center;
+    margin: 20px;
+}
+
+.img {
+    margin-top: 20px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.presentacion {
+    text-align: center;
+    font-size: 40px;
+    margin : 15px;
+    position: relative;
+    top: 5px;
+}
+
+.jugador, .computadora {
+    margin: 50px;
+}
+
+.claseAnimacion {
+    animation-name: animacionLucha;
+    animation-duration: 600ms;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.img img{
+    z-index: -1;
+}
+
+@keyframes animacionLucha {
+    0% {}
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.comienzaJuego {
+    margin: 10px;
+}
+
+#resultado {
+    position: relative;
+    bottom: 25px;
+}

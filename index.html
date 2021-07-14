@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2 class="presentacion">Piedra, Papel o Tijera</h2>
+    <h1 class="comienzaJuego">Comienza el juego!</h1>
+    <div id="contenedor" class="contenedor">
+      <div class="imagenes">
+        <div class="imagen">
+          <span class="titulo">PIEDRA</span>
+          <div id="piedra" class="img">
+            <img src="piedra.png" alt="piedra" height="90" />
+          </div>
+        </div>
+        <div class="imagen">
+          <span class="titulo">PAPEL</span>
+          <div id="papel"  class="img">
+            <img src="papel.png" alt="papel" height="160" />
+          </div>
+        </div>
+        <div class="imagen">
+          <span class="titulo">TIJERA</span>
+          <div id="tijera"  class="img">
+            <img src="tijera.png" alt="tijera" height="160" />
+          </div>
+        </div>
+      </div>
+      <div class="lucha">
+        <img id="jugador" class="jugador" src="piedra.png" alt="piedra" height="90" />
+        <img id="computadora" class="computadora" src="piedra.png" alt="piedra" height="90" />
+      </div>
+    </div>
+    <h2 id="resultado"> </h2>
+    <script src="script.js"></script>
+  </body>
+</html>
